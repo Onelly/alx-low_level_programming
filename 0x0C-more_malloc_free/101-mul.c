@@ -56,8 +56,8 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	for (addrem += mulrem; k >= 0 && addrem; k--)
 	{
 		add = (dest[k] - '0') + addrem;
-		addrem = add / 10; -
-			dest[k] = add % 10 + '0';
+		addrem = add / 10;
+		dest[k] = add % 10 + '0';
 	}
 
 	if (addrem)
